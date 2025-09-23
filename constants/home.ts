@@ -1,6 +1,6 @@
 export const BUSINESS_SECTIONS = [
   {
-    BACKGROUND_IMAGES: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
+    BACKGROUND_IMAGES: ["/hotel-operation-bg1.jpg", "/hotel-operation-bg2.jpg", "/hotel-operation-bg3.jpg"],
     MAIN_TITLE: "HOTEL\nOPERATION",
     SUBTITLE: "ホテルオペレーション事業",
     COMPANY_INFO: "",
@@ -12,7 +12,7 @@ export const BUSINESS_SECTIONS = [
     CTA_TEXT: "ホテルオペレーション事業について",
   },
   {
-    BACKGROUND_IMAGES: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
+    BACKGROUND_IMAGES: ["/hotel-restaurant-bg1.jpg", "/hotel-restaurant-bg2.jpg", "/hotel-restaurant-bg3.jpg"],
     MAIN_TITLE: "HOTEL &\nRESTAURANT",
     SUBTITLE: "ホテル&レストラン事業",
     COMPANY_INFO: "株式会社テリ・アート HR",
@@ -50,7 +50,7 @@ export const BUSINESS_SECTIONS = [
     CTA_TEXT: "葬祭事業について",
   },
   {
-    BACKGROUND_IMAGES: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
+    BACKGROUND_IMAGES: ["/direction-bg1.jpg", "/direction-bg2.jpg", "direction-bg3.jpg"],
     MAIN_TITLE: "DIRECTION",
     SUBTITLE: "演出事業",
     COMPANY_INFO: "合同会社Oria（オリア）",
@@ -62,7 +62,7 @@ export const BUSINESS_SECTIONS = [
     CTA_TEXT: "演出事業について",
   },
   {
-    BACKGROUND_IMAGES: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
+    BACKGROUND_IMAGES: ["/staffing-agency-bg1.jpg", "/staffing-agency-bg2.jpg", "/staffing-agency-bg3.jpg"],
     MAIN_TITLE: "STAFFING AGENCY",
     SUBTITLE: "人材紹介事業",
     COMPANY_INFO: "株式会社テリ・アート トランスコーポレート",

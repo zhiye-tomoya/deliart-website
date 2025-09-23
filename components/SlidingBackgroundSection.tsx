@@ -45,6 +45,7 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
               }}
             />
           ))}
@@ -103,7 +104,7 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
             {/* Company Info */}
             {COMPANY_INFO && (
               <div className={`transform transition-all duration-1000 delay-500 ${isLoaded ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
-                <p className='text-sm font-light mb-16 tracking-[0.1em]'>
+                <p className='text-lg font-light mb-16 tracking-[0.1em]'>
                   <span className='pb-2 border-b'>{COMPANY_INFO}</span>
                 </p>
               </div>
