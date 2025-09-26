@@ -8,7 +8,7 @@ import { Youtube, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className='bg-neutral-900 text-gray-300 text-sm'>
-      <div className='max-w-7xl mx-auto px-6 py-10'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10'>
         {/* Top Row */}
         <div className='flex flex-col md:flex-row md:items-start md:justify-between border-t pt-[2.5rem] border-gray-700 pb-6 mb-6'>
           {/* Logo */}
