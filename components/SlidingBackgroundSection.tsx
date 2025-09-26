@@ -86,7 +86,7 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
       <div className='absolute z-20 top-[17%] left-[10%] text-white'>
         <div className='px-6 pb-80'>
           {/* Main Title */}
-          <h1 className={`${inter.className} text-7xl md:text-8xl font-bold leading-[0.9] mb-8 tracking-[-0.02em]`}>
+          <h1 className={`${inter.className} text-5xl md:text-8xl font-bold leading-[0.9] mb-8 tracking-[-0.02em]`}>
             {MAIN_TITLE.split("\n").map((line, i) => (
               <React.Fragment key={i}>
                 {line}
