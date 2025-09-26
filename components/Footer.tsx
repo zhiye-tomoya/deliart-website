@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
 
           {/* Nav Links */}
-          <nav className='flex flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0'>
+          <nav className='flex flex-col md:flex-row flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0'>
             {footerLinks.map((link) => (
               <Link key={link.href} href={link.href} className='hover:text-white transition-colors'>
                 {link.label}
@@ -38,7 +38,7 @@ export default function Footer() {
           </nav>
         </div>
         {/* Contact Button */}
-        <div className='flex'>
+        <div className='hidden md:flex md:mb-0'>
           <div className='flex w-full justify-end'>
             <Link href='/contact' className='flex justify-between items-center md:gap-32 border border-gray-400 px-8 py-4 rounded-md hover:border-white hover:text-white transition-colors'>
               お問い合わせ
@@ -56,7 +56,11 @@ export default function Footer() {
         {/* Social + Address */}
         <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-6'>
           {/* Address */}
-          <p className='text-gray-400'>〒101-0054 東京都千代田区神田錦町3-15 名鉄不動産竹橋ビル3F</p>
+          <p className='flex flex-col md:flex-row md:gap-2 text-gray-400'>
+            <span className='font-bold'>住所: 〒101-0054 </span>
+            <span className='font-bold'>東京都千代田区神田錦町3-15</span>
+            <span>名鉄不動産竹橋ビル3F</span>
+          </p>
         </div>
 
         {/* Policy Links */}

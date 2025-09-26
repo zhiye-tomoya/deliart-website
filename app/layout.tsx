@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable} bg-black antialiased`}>
         <Header />
-        <div className='mt-[8rem] my-[20rem]'>{children}</div>
+        <div className='mt-[8rem] my-[20rem] pb-[10rem] mb:pb-[20rem]'>{children}</div>
         <Footer />
       </body>
     </html>

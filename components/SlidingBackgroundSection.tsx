@@ -72,7 +72,7 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
 
         {/* Japanese text - rotated 90 degrees */}
         <div
-          className='text-white text-sm font-medium transform rotate-90'
+          className='text-white w-[70px] text-sm font-medium transform rotate-90'
           style={{
             fontFamily: "Noto Sans JP, sans-serif",
             letterSpacing: "0.1em",
@@ -98,13 +98,13 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
           <div className='max-w-4xl'>
             {/* Subtitle */}
             <div className={`transform transition-all duration-1000 delay-300 ${isLoaded ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
-              <p className='text-sm font-light mb-8 tracking-[0.15em]'>{SUBTITLE}</p>
+              <p className='text-md font-bold mb-8 tracking-[0.15em]'>{SUBTITLE}</p>
             </div>
 
             {/* Company Info */}
             {COMPANY_INFO && (
               <div className={`transform transition-all duration-1000 delay-500 ${isLoaded ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
-                <p className='text-lg font-light mb-16 tracking-[0.1em]'>
+                <p className='text-lg font-semibold mb-16 tracking-[0.1em]'>
                   <span className='pb-2 border-b'>{COMPANY_INFO}</span>
                 </p>
               </div>
@@ -113,7 +113,7 @@ export const SlidingBackgroundSection: React.FC<SlidingBackgroundSectionProps> =
             {/* Main Message */}
             <div className={`transform transition-all duration-1000 delay-700 ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
               <h2 className={`${notoSerifJP.className} text-xl md:text-3xl font-light mb-8 leading-tight`}>{MAIN_MESSAGE_TITLE}</h2>
-              <p className='text-base md:text-sm font-light leading-relaxed mb-16 max-w-lg' style={{ fontFamily: "Noto Sans JP, sans-serif", lineHeight: "1.8" }}>
+              <p className='text-base md:text-sm font-semibold leading-relaxed mb-16 max-w-lg' style={{ fontFamily: "Noto Sans JP, sans-serif", lineHeight: "1.8" }}>
                 {MAIN_MESSAGE_BODY}
               </p>
             </div>

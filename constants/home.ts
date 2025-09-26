@@ -50,7 +50,7 @@ export const BUSINESS_SECTIONS = [
     CTA_TEXT: "葬祭事業について",
   },
   {
-    BACKGROUND_IMAGES: ["/direction-bg1.jpg", "/direction-bg2.jpg", "direction-bg3.jpg"],
+    BACKGROUND_IMAGES: ["/direction-bg1.jpg", "/direction-bg2.jpg", "/direction-bg3.jpg"],
     MAIN_TITLE: "DIRECTION",
     SUBTITLE: "演出事業",
     COMPANY_INFO: "合同会社Oria（オリア）",
