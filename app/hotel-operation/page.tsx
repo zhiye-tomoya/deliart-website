@@ -1,104 +1,66 @@
+import HeroSection from "@/components/HeroSection";
+import Image from "next/image";
+import { FEATURE_SECTION } from "@/constants/hotelOperation";
+import { notoSerifJP } from "@/lib/fonts";
+import { OtherBusinessSection } from "@/components/OtherBusinessSection";
+
 export default function HotelOperation() {
   return (
-    <div className='min-h-screen bg-gray-50'>
-      <div className='container mx-auto px-4 py-16'>
-        <h1 className='text-4xl font-bold text-gray-900 mb-8'>ホテルオペレーション</h1>
-
-        <div className='max-w-4xl mx-auto'>
-          <section className='mb-12'>
-            <h2 className='text-2xl font-semibold text-gray-800 mb-6'>サービス概要</h2>
-            <p className='text-lg text-gray-700 leading-relaxed mb-6'>デリアートのホテルオペレーション事業では、ホテル運営の全般をサポートし、お客様に最高品質のサービスを提供いたします。豊富な経験と専門知識を活かし、効率的で質の高いホテル運営を実現します。</p>
-          </section>
-
-          <section className='mb-12'>
-            <h2 className='text-2xl font-semibold text-gray-800 mb-6'>運営サービス</h2>
-            <div className='grid md:grid-cols-2 gap-8'>
-              <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold text-gray-800 mb-4'>フロント業務</h3>
-                <p className='text-gray-700 mb-4'>お客様の第一印象を決める重要なフロント業務を、プロフェッショナルなスタッフが担当いたします。</p>
-                <ul className='text-gray-700 space-y-2'>
-                  <li>• チェックイン・チェックアウト</li>
-                  <li>• 予約管理・問い合わせ対応</li>
-                  <li>• コンシェルジュサービス</li>
-                  <li>• 多言語対応</li>
-                </ul>
-              </div>
-              <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold text-gray-800 mb-4'>ハウスキーピング</h3>
-                <p className='text-gray-700 mb-4'>清潔で快適な客室環境を維持するため、細部まで行き届いた清掃サービスを提供いたします。</p>
-                <ul className='text-gray-700 space-y-2'>
-                  <li>• 客室清掃・メンテナンス</li>
-                  <li>• リネン・アメニティ管理</li>
-                  <li>• パブリックエリア清掃</li>
-                  <li>• 品質管理・チェック</li>
-                </ul>
-              </div>
+    <div className='min-h-screen bg-[rgb(51,51,51)] text-white'>
+      <HeroSection />
+      <div className='p-20'>
+        <div className='grid grid-cols-7 mb-[10rem]'>
+          <div className='col-span-1 font-semibold'>
+            <div>FEATURE</div>
+            <div>私たちの特徴</div>
+          </div>
+          <div className='col-span-2 w-[300px]'>
+            <Image src='/image/hotel-operation-content1.jpg' width={500} height={500} alt='Hotel Operation Content 1' className='w-full h-auto object-cover' />
+            <div className={`${notoSerifJP.className} mt-8`}>
+              <h3 className={`text-lg md:text-xl`}>{FEATURE_SECTION[0].title}</h3>
+              <p className='mt-2 text-sm md:text-lg'>{FEATURE_SECTION[0].description}</p>
             </div>
-          </section>
-
-          <section className='mb-12'>
-            <h2 className='text-2xl font-semibold text-gray-800 mb-6'>管理業務</h2>
-            <div className='grid md:grid-cols-3 gap-6'>
-              <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold text-gray-800 mb-4'>収益管理</h3>
-                <p className='text-gray-700'>データ分析に基づいた効果的な収益管理で、ホテルの収益性向上をサポートします。</p>
-              </div>
-              <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold text-gray-800 mb-4'>人事管理</h3>
-                <p className='text-gray-700'>スタッフの採用・研修・管理を通じて、質の高いサービス提供体制を構築します。</p>
-              </div>
-              <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold text-gray-800 mb-4'>施設管理</h3>
-                <p className='text-gray-700'>建物・設備の保守管理から安全管理まで、総合的な施設管理を行います。</p>
-              </div>
+          </div>
+        </div>
+        <div className='grid grid-cols-7 gap-[5rem] px-[2rem] mb-[10rem]'>
+          <div className='col-span-1 font-semibold'>
+            <div>OUR SERVICE</div>
+            <div>取扱サービス</div>
+          </div>
+          <div className='col-span-3 border-b'>
+            <Image src='/image/hotel-operation-content1.jpg' width={500} height={500} alt='Hotel Operation Content 1' className='w-full h-auto object-cover' />
+            <div className={`${notoSerifJP.className} mt-8`}>
+              <h3 className={`text-lg md:text-xl`}>{FEATURE_SECTION[0].title}</h3>
             </div>
-          </section>
+          </div>
 
-          <section className='mb-12'>
-            <h2 className='text-2xl font-semibold text-gray-800 mb-6'>専門サービス</h2>
-            <div className='bg-white p-8 rounded-lg shadow-md'>
-              <div className='grid md:grid-cols-2 gap-8'>
-                <div>
-                  <h4 className='font-semibold text-gray-800 mb-3'>マーケティング支援</h4>
-                  <p className='text-gray-700 mb-6'>効果的なマーケティング戦略の立案・実行で、集客力向上をサポートします。</p>
-
-                  <h4 className='font-semibold text-gray-800 mb-3'>品質管理</h4>
-                  <p className='text-gray-700'>継続的な品質向上のため、定期的な監査・評価を実施します。</p>
-                </div>
-                <div>
-                  <h4 className='font-semibold text-gray-800 mb-3'>システム導入</h4>
-                  <p className='text-gray-700 mb-6'>最新のホテル管理システムの導入・運用をサポートします。</p>
-
-                  <h4 className='font-semibold text-gray-800 mb-3'>コンサルティング</h4>
-                  <p className='text-gray-700'>ホテル運営に関する様々な課題解決のためのコンサルティングを提供します。</p>
-                </div>
-              </div>
+          <div className='col-span-3 border-b'>
+            <Image src='/image/hotel-operation-content1.jpg' width={500} height={500} alt='Hotel Operation Content 1' className='w-full h-auto object-cover' />
+            <div className={`${notoSerifJP.className} mt-8`}>
+              <h3 className={`text-lg md:text-xl`}>{FEATURE_SECTION[0].title}</h3>
             </div>
-          </section>
+          </div>
 
-          <section>
-            <h2 className='text-2xl font-semibold text-gray-800 mb-6'>私たちの強み</h2>
-            <div className='bg-white p-8 rounded-lg shadow-md'>
-              <div className='grid md:grid-cols-2 gap-8'>
-                <div>
-                  <h4 className='font-semibold text-gray-800 mb-3'>豊富な経験</h4>
-                  <p className='text-gray-700 mb-6'>長年のホテル運営経験により培われた専門知識とノウハウを活用します。</p>
-
-                  <h4 className='font-semibold text-gray-800 mb-3'>柔軟な対応</h4>
-                  <p className='text-gray-700'>各ホテルの特性やニーズに合わせた、オーダーメイドのサービスを提供します。</p>
-                </div>
-                <div>
-                  <h4 className='font-semibold text-gray-800 mb-3'>高品質なサービス</h4>
-                  <p className='text-gray-700 mb-6'>厳格な品質基準に基づき、一貫して高品質なサービスを提供します。</p>
-
-                  <h4 className='font-semibold text-gray-800 mb-3'>コスト効率</h4>
-                  <p className='text-gray-700'>効率的な運営により、コスト削減と品質向上の両立を実現します。</p>
-                </div>
-              </div>
+          <div className='col-span-1'></div>
+          <div className='col-span-3 border-b'>
+            <Image src='/image/hotel-operation-content1.jpg' width={500} height={500} alt='Hotel Operation Content 1' className='w-full h-auto object-cover' />
+            <div className={`${notoSerifJP.className} mt-8`}>
+              <h3 className={`text-lg md:text-xl`}>{FEATURE_SECTION[0].title}</h3>
             </div>
-          </section>
+          </div>
+
+          <div className='col-span-7'>
+            <div className='grid grid-cols-7'>
+              <div className='col-span-1'></div>
+              <button className={`${notoSerifJP.className} group flex items-center space-x-3 px-8 py-4 border border-gray-600 hover:border-amber-300 hover:bg-amber-300/10 transition-all duration-300 backdrop-blur-sm`}>
+                <span className='text-sm font-light tracking-[0.05em] group-hover:text-amber-300 transition-colors duration-300'>サービス詳細</span>
+                <div className='w-2 h-2 rounded-full bg-amber-300 group-hover:scale-125 transition-transform duration-300 animate-caret-blink' style={{ animationDuration: "3s" }} />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      <OtherBusinessSection />
     </div>
   );
 }
